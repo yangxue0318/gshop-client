@@ -21,6 +21,3 @@ export const reqShops=({latitude ,longitude})=>ajax({
     }
 
 })
-reqAddress('116.36867','40.10038').then((result)=>{
-console.log('result',result)
-})
