@@ -59,8 +59,11 @@
     },
 
     computed: {
-      ...mapState(['address', 'categorys']),
-
+      // ...mapState(['address', 'categorys']),
+      ...mapState({
+        address:state=>state.msite.address,//函数的返回值作为属性值
+         categorys:state=>state.msite.categorys,
+      }),
       /* 
       分类的二维数组
       小数组的最大长度要为8

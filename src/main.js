@@ -4,11 +4,14 @@ import router from './router'
 import store from './store'
 import Header from 'components/Header/Header.vue'
 import Star from 'components/Star/Star.vue'
-import './api'
+import {Button} from 'mint-ui'
+import './validate'
+import './mock/mockServer'
 //注册全局组件
 Vue.config.productionTip=false;
 Vue.component('Header',Header);
 Vue.component('Star',Star);
+Vue.component(Button.name,Button)
 // new Vue({
 //     el:'#app',
 //     components:{//第一种方式   引入一个带编译器的文件在脚手架配置文件里面
